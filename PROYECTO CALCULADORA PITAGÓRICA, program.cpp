@@ -19,6 +19,7 @@ float hipotenusa();
 float cateto();
 float Area_triangulo();
 float Hallar_lado_triangulo();
+float Hallar_Areacuadrado();
 int main(){
 	int opcion;
 	do{
@@ -42,6 +43,8 @@ int main(){
 			break;
 			case 8: Hallar_lado_triangulo();
 			break;
+			case 9: Hallar_Areacuadrado();
+			break;
 			default : cout << " ---->Ingrese Dato valido<---- ";
 		}
 
@@ -53,8 +56,7 @@ int menu(){
 	int opcion;
 	system("cls");
 	system("color 0B");
-	
-	cout<<"\n\n Menu Principal\n";
+	cout<<"--------------------------------\n\t Menu Principal\n--------------------------------\n";
 	cout<<"1. Suma"<<endl;
 	cout<<"2. Resta"<<endl;
 	cout<<"3. Multiplicacion"<<endl;
@@ -63,12 +65,14 @@ int menu(){
 	cout<<"6. Hallar cateto"<<endl;
 	cout<<"7. Hallar Area del triangulo"<<endl;
 	cout<<"8. Hallar Lado faltante"<<endl;
-	cout<<"0. Bye Bye"<<endl;
+	cout<<"9. Hallar Area de un cuadrado"<<endl;
+	cout<<"0. Bye Bye\n--------------------------------"<<endl;
 	cout<<"Ingresa una opcion---->"<<endl;
 	cin>>opcion;
 		return opcion;
 }
 float suma(){
+	system("cls");
 	int n;
 	float suma = 0;
 	float valor;
@@ -84,6 +88,7 @@ float suma(){
 	system("pause");
 }
 float resta(){
+	system("cls");
 	int n;
 	float resta = 0;
 	float valor;
@@ -101,6 +106,7 @@ float resta(){
 	system("pause");
 }
 float multiplicacion(){
+	system("cls");
 	int n;
 	float multiplicacion = 1;
 	float valor;
@@ -117,6 +123,7 @@ float multiplicacion(){
 	system("pause");
 }
 float division(){
+	system("cls");
 	int n;
 	float division = 0;
 	float valor;
@@ -136,7 +143,7 @@ float division(){
 }
 
 float hipotenusa(){
-	
+	system("cls");
 	float a,b,r;
 		cout<<"Ingresa el valor del primer cateto :D ==>   "<<endl;
 		cin>>a;
@@ -149,7 +156,7 @@ float hipotenusa(){
 	system("pause");
 }
 float cateto(){
-	
+	system("cls");
 	float a,b,r;
 		cout<<"Ingresa el valor de la hipotenusa :D ==>  "<<endl;
 		cin>>a;
@@ -162,7 +169,7 @@ float cateto(){
 	system("pause");
 }
 float Area_triangulo(){
-	
+	system("cls");
 	float a, b, r;
 		cout<<"Ingresa la base de tu triangulo :D ==>"<<endl;
 		cin>>a;
@@ -175,7 +182,7 @@ float Area_triangulo(){
 	system("pause");
 }
 float Hallar_lado_triangulo(){
-	
+	system("cls");
 	float area, b, r;
 		
 		cout<<"Ingresa el Area de tu triangulo :D ==>"<<endl;
@@ -190,5 +197,17 @@ float Hallar_lado_triangulo(){
 		
 	system("pause");
 }
+
+float Hallar_Areacuadrado(){
+	system("cls");
+	float area,lado1,lado2;
 	
+	cout<<"Ingresa el lado 1 de tu cuadrado";
+	cin>>lado1;
+	cout<<"Ingresa el lado 2 de tu cuadrado";
+	cin>>lado2;
+	area=(lado1*lado2);
+	cout<<"El Area de tu cuadrado es la siguiente :D"<<endl<<area<<endl;
+	system("pause");
+}
 
